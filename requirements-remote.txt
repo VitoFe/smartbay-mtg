@@ -1,0 +1,13 @@
+# Additional packages on the GPU compute host, for the pretrained and in-context arms. These are the
+# versions the thesis ran with; the host's full pip-freeze manifests are kept beside its project
+# directory (review_20260919/logs/pip_freeze_*.txt). Dry-run before adding anything: a single package
+# (granite-tsfm, uni2ts) would have silently downgraded scikit-learn, numpy, pandas or scipy.
+#
+# Remote baseline differs slightly from requirements.txt: numpy 2.5.2, pandas 3.0.5, optuna 4.9.0.
+torch==2.5.1
+transformers==5.17.0
+chronos-forecasting==2.3.2
+timesfm==3.0.2
+tabpfn==9.0.0      # needs a licence token, kept outside the repository
+tabicl==2.2.0
+statsmodels

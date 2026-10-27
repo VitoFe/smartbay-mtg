@@ -1,0 +1,4 @@
+# The release contract (config/release_contract.json) hashes files byte for byte, and the
+# addendum declarations are hashed by their .sha256 companions. Git must therefore store and check
+# out every file exactly as written: no line-ending conversion, on any platform.
+* -text
